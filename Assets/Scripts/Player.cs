@@ -8,7 +8,7 @@ public class Player : MonoBehaviour {
 
 	public Interactable interactingObject;
 
-	public List<IItem> itemList;
+	public List<Item> itemList;
 
 	CharacterController controller;
 

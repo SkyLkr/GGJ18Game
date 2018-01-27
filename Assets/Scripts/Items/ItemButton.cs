@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemButton : MonoBehaviour {
-
-	[SerializeField] IItem item;
+	[SerializeField] Item item;
 
 	public void Click() {
 		item.Use();

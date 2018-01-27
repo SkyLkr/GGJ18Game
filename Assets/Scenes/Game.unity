@@ -553,13 +553,14 @@ GameObject:
   - component: {fileID: 1013676821}
   - component: {fileID: 1013676820}
   - component: {fileID: 1013676819}
+  - component: {fileID: 1013676822}
   m_Layer: 5
   m_Name: Items
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1013676818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -634,6 +635,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013676817}
+--- !u!114 &1013676822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013676817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917c5f2bf07abed4b85fc9603bc12470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1026057122}
+  itemButton: {fileID: 1995813195825980, guid: 4cf0d9c5736807148a7977a774619af4, type: 2}
 --- !u!1 &1026057117
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +749,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   interactingObject: {fileID: 0}
-  itemList: []
+  itemList:
+  - {fileID: 11400000, guid: 8c1c25d3f572d954fb6860e4ad5df969, type: 2}
+  - {fileID: 11400000, guid: f3a684e0f6adfec44bdcdb548b0f00c3, type: 2}
+  - {fileID: 11400000, guid: f3a684e0f6adfec44bdcdb548b0f00c3, type: 2}
 --- !u!143 &1026057123
 CharacterController:
   m_ObjectHideFlags: 0
