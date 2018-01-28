@@ -1079,6 +1079,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Craft
       objectReference: {fileID: 0}
+    - target: {fileID: 114431058105471656, guid: f739d6d60a50f634e836c6f4f36dc692,
+        type: 2}
+      propertyPath: m_Text
+      value: Bandeira
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f739d6d60a50f634e836c6f4f36dc692, type: 2}
   m_IsPrefabParent: 0
@@ -2238,6 +2243,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Craft
       objectReference: {fileID: 0}
+    - target: {fileID: 114431058105471656, guid: f739d6d60a50f634e836c6f4f36dc692,
+        type: 2}
+      propertyPath: m_Text
+      value: Gerador
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f739d6d60a50f634e836c6f4f36dc692, type: 2}
   m_IsPrefabParent: 0
@@ -2457,6 +2467,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Craft
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431058105471656, guid: f739d6d60a50f634e836c6f4f36dc692,
+        type: 2}
+      propertyPath: m_Text
+      value: Radio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f739d6d60a50f634e836c6f4f36dc692, type: 2}
@@ -3828,6 +3843,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Craft
       objectReference: {fileID: 0}
+    - target: {fileID: 114431058105471656, guid: f739d6d60a50f634e836c6f4f36dc692,
+        type: 2}
+      propertyPath: m_Text
+      value: Antena
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f739d6d60a50f634e836c6f4f36dc692, type: 2}
   m_IsPrefabParent: 0
@@ -4145,6 +4165,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Craft
       objectReference: {fileID: 0}
+    - target: {fileID: 114431058105471656, guid: f739d6d60a50f634e836c6f4f36dc692,
+        type: 2}
+      propertyPath: m_Text
+      value: Torre
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f739d6d60a50f634e836c6f4f36dc692, type: 2}
   m_IsPrefabParent: 0
@@ -4364,7 +4389,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 1418340542945880, guid: 642724073d39ca54c9f3e125353b4b2d,
+  m_PlayerPrefab: {fileID: 1403914058903788, guid: dd461e9b820bdba4b9494060e89e161d,
     type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
