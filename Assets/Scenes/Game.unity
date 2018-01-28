@@ -528,13 +528,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 209736991}
-  m_LocalRotation: {x: 0.39342147, y: -0, z: -0, w: 0.91935825}
-  m_LocalPosition: {x: 0, y: 4.51, z: -4.08}
+  m_LocalRotation: {x: 0.21369913, y: -0, z: -0, w: 0.9768995}
+  m_LocalPosition: {x: 0, y: 2.86, z: -4.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1026057121}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 46.335003, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.678001, y: 0, z: 0}
 --- !u!1001 &272425832
 Prefab:
   m_ObjectHideFlags: 0
@@ -2222,7 +2222,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026057117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.9, y: 18.4, z: 175.4}
+  m_LocalPosition: {x: 38.1, y: 18.4, z: 175.4}
   m_LocalScale: {x: 3.4790924, y: 3.479095, z: 3.479095}
   m_Children:
   - {fileID: 209736995}
@@ -2240,7 +2240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9af1b3713ac7f4685bfad858923359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 30
+  rotationSpeed: 50
   gravity: 10
   interactingObject: {fileID: 0}
   itemList: []
@@ -2700,7 +2701,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lootPoint: {fileID: 1076108051015472, guid: e490d31ff27479c4cb90a9505d8b1b09, type: 2}
-  quantidade: 3
+  quantidade: 8
+  intervaloEmSegundos: 60
   spawnSpots: {fileID: 1445983098}
 --- !u!4 &1113207665
 Transform:
@@ -3504,7 +3506,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445983097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1656689323}

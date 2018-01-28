@@ -6,6 +6,7 @@ public class LootPointSpawner : MonoBehaviour {
 
 	[SerializeField] GameObject lootPoint;
 	[SerializeField] int quantidade;
+	[SerializeField] float intervaloEmSegundos;
 	[SerializeField] Transform spawnSpots;
 
 	// Use this for initialization
@@ -15,10 +16,17 @@ public class LootPointSpawner : MonoBehaviour {
 			spots.Add(spawnSpots.GetChild(i));
 		}
 
+		StartCoroutine(Spawn(spots, quantidade, intervaloEmSegundos));
+	}
+
+	IEnumerator Spawn(List<Transform> spots, int quantidade, float time) {
+		List<Transform> temp = new List<Transform>(spots);
 		for (int i = 0; i < quantidade; i++) {
-			int index = Random.Range(0, spots.Count);
-			Instantiate(lootPoint, spots[index].position, lootPoint.transform.rotation);
-			spots.RemoveAt(index);
+			int index = Random.Range(0, temp.Count);
+			Instantiate(lootPoint, temp[index].position, lootPoint.transform.rotation);
+			temp.RemoveAt(index);
 		}
+		yield return new WaitForSeconds(time);
+		StartCoroutine(Spawn(spots, quantidade, time));
 	}
 }
