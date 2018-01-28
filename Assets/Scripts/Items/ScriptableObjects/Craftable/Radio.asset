@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2d572ef458ac24b9434101caf1198d, type: 3}
+  m_Name: Radio
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  ConstructionTree:
+  - {fileID: 11400000, guid: 6e5921602f187134bafca8af565f1576, type: 2}
+  - {fileID: 11400000, guid: 8aa0a0ec196d25d4683fd48297305dfb, type: 2}
+  - {fileID: 11400000, guid: ecd1c7f62742e714c9e18f07de082008, type: 2}
+  - {fileID: 11400000, guid: ca01a30e9bffdcb468190ab6f05251a7, type: 2}
+  - {fileID: 11400000, guid: 4079b8984e34d3c43a6a57ed5f2927bf, type: 2}

@@ -7,9 +7,10 @@ public class Interactable : MonoBehaviour {
 
 	[SerializeField] GameObject interactionText;
 
+	public BaseItem[] items = null;
+
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -17,8 +18,14 @@ public class Interactable : MonoBehaviour {
 		
 	}
 
-	public void Interact() {
+	public void Interact(Player player) {
 		Debug.Log("Interagiu");
+
+		int itemAmmount = Random.Range(2, 5);
+		for (int i = 0; i < itemAmmount; i++) {
+			print(items.Length);
+			player.itemList.Add(items[Random.Range(0, items.Length)]);
+		}
 	}
 
 	private void OnTriggerEnter(Collider other) {

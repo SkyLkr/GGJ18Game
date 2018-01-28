@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		controller = GetComponent<CharacterController>();
+		
 	}
 	
 	// Update is called once per frame
@@ -25,8 +26,8 @@ public class Player : MonoBehaviour {
 		Vector3 movement = new Vector3(horizontal, 0, vertical);
 		controller.Move(movement * speed * Time.deltaTime);
 
-		if (Input.GetButtonDown("Interact")) {
-			interactingObject.Interact();
+		if (Input.GetButtonDown("Interact") && interactingObject != null) {
+			interactingObject.Interact(this);
 		}
 	}
 }
