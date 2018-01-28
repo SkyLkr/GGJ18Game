@@ -20,13 +20,13 @@ public class PauseMenu : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		// foreach(KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
-     	// {
-        //  if (Input.GetKeyDown(kcode))
-        //      Debug.Log("KeyCode down: " + kcode);
-     	// }
+		foreach(KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
+     	{
+         if (Input.GetKeyDown(kcode))
+            Debug.Log("KeyCode down: " + kcode);
+     	}
 
-		Debug.Log(eventSystem.currentSelectedGameObject);
+		// Debug.Log(eventSystem.currentSelectedGameObject);
 		if (eventSystem.currentSelectedGameObject == null) {
 			eventSystem.SetSelectedGameObject(eventSystem.firstSelectedGameObject);
 		}

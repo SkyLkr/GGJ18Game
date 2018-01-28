@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	[SerializeField] float speed;
+	[SerializeField] float gravity;
 
 	public Interactable interactingObject;
 
@@ -23,7 +24,15 @@ public class Player : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
 
-		Vector3 movement = new Vector3(horizontal, 0, vertical);
+		float camhorizontal = Input.GetAxis("CHorizontal");
+		transform.Rotate(0, camhorizontal, 0);
+
+		//Vector3 movement = new Vector3(horizontal, 0, vertical);
+		Vector3 movement = (transform.forward * vertical) + transform.right * horizontal;
+
+
+		movement.y -= gravity;
+
 		controller.Move(movement * speed * Time.deltaTime);
 
 		if (Input.GetButtonDown("Interact") && interactingObject != null) {

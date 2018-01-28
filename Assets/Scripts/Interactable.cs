@@ -5,12 +5,16 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Interactable : MonoBehaviour {
 
-	[SerializeField] GameObject interactionText;
+	public static GameObject interactionText;
 
 	public BaseItem[] items = null;
 
 	// Use this for initialization
 	void Start () {
+		if (interactionText == null) {
+			interactionText = GameObject.Find("InteractionText");
+			interactionText.SetActive(false);
+		}
 	}
 	
 	// Update is called once per frame
@@ -26,6 +30,9 @@ public class Interactable : MonoBehaviour {
 			print(items.Length);
 			player.itemList.Add(items[Random.Range(0, items.Length)]);
 		}
+
+		Destroy(gameObject.transform.parent.gameObject);
+		interactionText.SetActive(false);
 	}
 
 	private void OnTriggerEnter(Collider other) {
