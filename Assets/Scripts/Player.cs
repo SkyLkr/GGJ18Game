@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Player : MonoBehaviour {
+public class Player : NetworkBehaviour {
 
 	[SerializeField] float speed;
 	[SerializeField] float rotationSpeed;
@@ -22,6 +23,12 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
+		if (!isLocalPlayer) {
+			if (transform.childCount > 0) Destroy(transform.GetChild(0).gameObject);
+			return;
+		}
+
 		float horizontal = Input.GetAxis("Horizontal");
 		float vertical = Input.GetAxis("Vertical");
 
